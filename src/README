@@ -1,0 +1,18 @@
+(yet another very simplistic)
+Swtor Parser v2
+written by F.Schiemenz
+featuring Highcharts
+
+TODO
+- parsing deeps and shielding ...
+- interacive data breakdown via ajax/json
+- use of a more sophisticated json_decode() or JSON2
+- rar / 7z support
+- documentation
+- testing
+
+INFO
+- complete eclipse project
+- written in php/js for the execution via webserver/browser
+- by default companions count toward their respective owners
+- swtor = star wars the old republic...d'oh!

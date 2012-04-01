@@ -1,0 +1,32 @@
+/**
+ *  Stylesheet for Swtor Parser v2
+ *  @author Frank Schiemenz
+ */
+
+@charset "ISO-8859-1";
+
+#the_header,
+#the_form {
+	
+	height: auto;
+	margin: 5px 0 5px 0;
+	padding: 10px 0 10px 10px;
+	border: 2px solid rgb(69, 114, 167);
+	background: -moz-linear-gradient(-45deg, rgb(240, 240, 255), rgb(255, 255, 255));
+	color: '#666666';
+    font-size: 14px;
+    font-family: "Trebuchet MS", Verdana, sans-serif;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+}
+
+#the_header a {
+	
+	text-decoration: none;
+}
+
+#highcharts_container,
+#another_highcharts_container{
+	
+	margin: 5px 0 5px 0;	
+}
