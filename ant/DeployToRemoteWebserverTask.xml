@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- See http://ant.apache.org/manual/OptionalTasks/ftp.html for all task options -->
+
+<project name="TwitchTV" default="ftp">
+	<description>FTP-Upload</description>
+
+	<target name="ftp" description="upload stuff to ftp">
+		<echo>Uploading files to ftp</echo>
+		<!-- change settings via properies defined in the ant main tab -->
+		<ftp server = "${ftp_server}"
+				 userid               = "${ftp_user}"
+				 password             = "${ftp_pass}"
+				 remotedir            = "${ftp_dir}"
+				 passive              = "no"
+				 binary               = "yes"
+				 depends              = "yes"
+				 verbose              = "yes"
+				 timestampGranularity = "NONE" >
+
+			<fileset dir="../src">
+                <include name="**/*.*"/>
+            </fileset>
+            
+		</ftp>
+	</target>
+	
+</project>

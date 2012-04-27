@@ -12,7 +12,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<meta http-equiv="Content-Type" content="text/html" charset="ISO-8859-1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<title>Swtor Parser v2</title>
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 		<script type="text/javascript" src="http://code.highcharts.com/highcharts.js"></script>
@@ -25,13 +25,13 @@
 	<body>
 	<div id="index_page">
 		<div id="the_header">
-			<p><strong>Swtor Log Parser</strong></p>
-			<p>Bitte wähle unten die Log-Datei aus, welche geparst werden soll! (Beispieldatei: <a href="uploads/sample-log.zip">sample-log.zip</a>)</p>
+			<p><strong>Swtor Parser v2</strong> written by F.Schiemenz</p>
+			<p>Please choose a logfile below<a href="uploads/sample-log.zip"> (sample-log.zip)</a></p>
 		</div>
 		<div id="the_form">
 			<form enctype="multipart/form-data" action="index.php" method="POST" name="form">
 				<input type="file" name="file" />
-				<input type="submit" value="Hochladen" name="uploadButton" onclick="checkFileUpload()" />
+				<input type="submit" value="Upload" name="uploadButton" onclick="checkFileUpload()" />
 				<?php $uploadedFile = basename($_FILES['file']['name']);
 					
 					if(move_uploaded_file($_FILES['file']['tmp_name'], $GLOBALS["UPLOAD_PATH"] . $uploadedFile))
@@ -52,11 +52,7 @@
 									{
 										$uploadedFile = $zip->getNameIndex(0);
 									}
-									else 
-									{ 
-										echo 'Zip-Error'; 
-										break;
-									}
+									else { echo 'Zip-Error'; }
 									
 									$zip->close();
 								}

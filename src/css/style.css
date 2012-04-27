@@ -5,28 +5,44 @@
 
 @charset "ISO-8859-1";
 
+html, 
+body {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0 0px 0px;
+}
+
+body {
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+	color: rgb(16, 82, 137);//rgb(69, 114, 167);
+	font-size: 11px;
+}
+
 #the_header,
-#the_form {
-	
+#the_form {	
 	height: auto;
-	margin: 5px 0 5px 0;
-	padding: 10px 0 10px 10px;
-	border: 2px solid rgb(69, 114, 167);
-	background: -moz-linear-gradient(-45deg, rgb(240, 240, 255), rgb(255, 255, 255));
-	color: '#666666';
-    font-size: 14px;
-    font-family: "Trebuchet MS", Verdana, sans-serif;
+	margin: 0px 0px 5px 0px;
+	padding: 5px 0px 5px 10px;
+
+	border: 1px solid; 
+	border-color: rgb(69, 114, 167);
 	-moz-border-radius: 6px;
-	-webkit-border-radius: 6px;
+	-webkit-border-radius: 6px; 
+	-khtml-border-radius: 6px; 
+}
+
+#the_header {
+	background: -moz-linear-gradient(90deg, rgb(222, 222, 222), rgb(255, 255, 255));
+}
+
+#the_form {
+	background: -moz-linear-gradient(-90deg, rgb(222, 222, 222), rgb(255, 255, 255));
 }
 
 #the_header a {
-	
 	text-decoration: none;
 }
 
 #highcharts_container,
 #another_highcharts_container{
-	
 	margin: 5px 0 5px 0;	
 }
